@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,700&display=swap');
+
+$main: #3EB8F4;
+$secondary: #254B85;
+$secondaryHover: #254b85f2;
+$yellow: #FDAD33;
+$black: #112D58;
+$white: #fff;
+$light: #8497B4;
+$transition: all .3s linear;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+button {
+  border: none;
+  background: none;
+}
+.side-title {
+  text-align: center;
+  h3 {
+    font-size: 1.44rem;
+    color: $black;
+    text-transform: capitalize;
+  }
+  p {
+    font-style: 1rem;
+    color: $light;
+  }
+}
+@media (min-width: 768px) {
+  .side-title {
+      text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .side-title {
+    h3 {
+      font-style: 1.728rem;
+    }
+  }
+}
+
+// Header 
+header {
+  .navbar-brand {
+    font-size: 1.44rem;
+    color: $main;
+    span {
+      color: $yellow;
+    }
+    &:hover {
+      color: $main !important;
+    }
+  }
+  .nav-link {
+    color: $black;
+  }
+
+  .sign {
+    background-color: $black;
+    padding: .4rem 1.8rem;
+    color: $white;
+    border: none;
+    transition: background-color .3s linear;
+    &:hover {
+      background-color: $secondaryHover;
+    }
+  }
+}
+@media (min-width: 768px) {
+  header .nav-link {
+    font-size: 1.2rem;
+  }
+}

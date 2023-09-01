@@ -7,6 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  min-height: 4500px;
 }
 
 button {
@@ -14,28 +15,35 @@ button {
   background: none;
 }
 
-.side-title {
+.main-title {
   text-align: center;
 }
-.side-title h3 {
+.main-title h3 {
   font-size: 1.44rem;
   color: #112D58;
   text-transform: capitalize;
+  font-weight: bold;
 }
-.side-title p {
+.main-title p {
   font-style: 1rem;
   color: #8497B4;
 }
 
 @media (min-width: 768px) {
-  .side-title {
+  .main-title {
     text-align: left;
   }
 }
 @media (min-width: 992px) {
-  .side-title h3 {
+  .main-title h3 {
     font-style: 1.728rem;
   }
+}
+header {
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.2s linear;
+  z-index: 1;
 }
 header .navbar-brand {
   font-size: 1.44rem;
@@ -64,5 +72,62 @@ header .sign:hover {
 @media (min-width: 768px) {
   header .nav-link {
     font-size: 1.2rem;
+  }
+}
+.intro {
+  background-image: url("../images/hero-bg.png");
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.intro form input {
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
+  padding: 0.6rem 0.8rem;
+  outline: none;
+  color: #8497B4;
+}
+.intro form input::-moz-placeholder {
+  color: #8497B4;
+}
+.intro form input::placeholder {
+  color: #8497B4;
+}
+.intro form img {
+  width: 2rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.intro h1 {
+  color: #112D58;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991.98px) {
+  .intro {
+    min-height: 80vh;
+  }
+}
+@media (min-width: 992px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .intro h1 {
+    font-size: 3.8rem;
+  }
+}
+.passion, .jobs, .companies {
+  padding-bottom: 6rem;
+}
+.passion img, .jobs img, .companies img {
+  width: 27rem;
+}
+
+@media (min-width: 768px) {
+  p.desc {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

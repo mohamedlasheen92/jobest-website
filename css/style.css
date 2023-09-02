@@ -119,15 +119,42 @@ header .sign:hover {
     font-size: 3.8rem;
   }
 }
-.passion, .jobs, .companies {
-  padding-bottom: 6rem;
+.passion, .jobs, .companies, .categories {
+  padding-bottom: 10rem;
 }
-.passion img, .jobs img, .companies img {
+.passion img, .jobs img, .companies img, .categories img {
   width: 27rem;
 }
 
 @media (min-width: 768px) {
   p.desc {
     width: 80%;
+  }
+}
+.categories .card {
+  box-shadow: 0 1.5625rem 2.8125rem rgba(0, 87, 255, 0.15);
+  border-radius: 1.5rem;
+  padding: 1.8rem 0;
+  transition: all 0.3s linear;
+}
+.categories .card h3 {
+  color: #112D58;
+  font-size: 1.2rem;
+}
+.categories .card:hover {
+  background-color: #3EB8F4;
+  transform: translateY(-0.2rem);
+}
+.categories .card:hover h3, .categories .card:hover p {
+  color: #fff !important;
+  transition: all 0.3s linear;
+}
+.categories .card img {
+  max-width: 7.5rem;
+}
+
+@media (min-width: 992px) {
+  .main-title h3 {
+    font-size: 2.4rem;
   }
 }/*# sourceMappingURL=style.css.map */

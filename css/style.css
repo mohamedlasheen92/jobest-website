@@ -119,11 +119,15 @@ header .sign:hover {
     font-size: 3.8rem;
   }
 }
-.passion, .jobs, .companies, .categories {
-  padding-bottom: 10rem;
-}
 .passion img, .jobs img, .companies img, .categories img {
   width: 27rem;
+}
+
+.passion,
+.jobs,
+.companies,
+.categories, .join {
+  padding-bottom: 10rem;
 }
 
 @media (min-width: 768px) {

@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  min-height: 4500px;
+  min-height: 5000px;
 }
 
 button {
@@ -119,14 +119,19 @@ header .sign:hover {
     font-size: 3.8rem;
   }
 }
-.passion img, .jobs img, .companies img, .categories img {
+.passion img,
+.jobs img,
+.companies img,
+.categories img {
   width: 27rem;
 }
 
 .passion,
 .jobs,
 .companies,
-.categories, .join {
+.categories,
+.join,
+.testimonials {
   padding-bottom: 10rem;
 }
 
@@ -149,7 +154,8 @@ header .sign:hover {
   background-color: #3EB8F4;
   transform: translateY(-0.2rem);
 }
-.categories .card:hover h3, .categories .card:hover p {
+.categories .card:hover h3,
+.categories .card:hover p {
   color: #fff !important;
   transition: all 0.3s linear;
 }
@@ -161,4 +167,49 @@ header .sign:hover {
   .main-title h3 {
     font-size: 2.4rem;
   }
+}
+.testimonials .swiper-wrapper {
+  margin-top: 3rem;
+}
+.testimonials .swiper-slide .item {
+  border-radius: 1rem;
+  padding: 4rem 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+  margin: 25px;
+  position: relative;
+}
+.testimonials .swiper-slide .item img {
+  position: absolute;
+  left: 50%;
+  top: -25%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.testimonials .swiper-slide .item p {
+  color: #112D58;
+  font-weight: 300;
+}
+.testimonials .swiper-slide .stars svg {
+  color: #FDAD33;
+  font-size: 1.5rem;
+}
+.testimonials .swiper-slide p {
+  width: 85%;
+  margin: 0 auto;
+}
+.testimonials .head {
+  color: #112D58;
+}
+.testimonials .head h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.testimonials .head .arr {
+  width: 100px;
+  position: relative;
+  margin-left: auto;
+}
+.testimonials .swiper-button-next:after,
+.testimonials .swiper-button-prev:after {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

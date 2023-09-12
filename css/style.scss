@@ -14,10 +14,12 @@ $transition: all .3s linear;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
-  min-height: 4500px;
+  min-height: 5000px;
 }
+
 button {
   border: none;
   background: none;
@@ -25,22 +27,26 @@ button {
 
 .main-title {
   text-align: center;
+
   h3 {
     font-size: 1.44rem;
     color: $black;
     text-transform: capitalize;
     font-weight: bold;
   }
+
   p {
     font-style: 1rem;
     color: $light;
   }
 }
+
 @media (min-width: 768px) {
   .main-title {
-      text-align: left;
+    text-align: left;
   }
 }
+
 @media (min-width: 992px) {
   .main-title {
     h3 {
@@ -55,16 +61,20 @@ header {
   width: 100%;
   transition: background-color .2s linear;
   z-index: 1;
+
   .navbar-brand {
     font-size: 1.44rem;
     color: $main;
+
     span {
       color: $yellow;
     }
+
     &:hover {
       color: $main !important;
     }
   }
+
   .nav-link {
     color: $black;
   }
@@ -75,11 +85,13 @@ header {
     color: $white;
     border: none;
     transition: background-color .3s linear;
+
     &:hover {
       background-color: $secondaryHover;
     }
   }
 }
+
 @media (min-width: 768px) {
   header .nav-link {
     font-size: 1.2rem;
@@ -93,39 +105,46 @@ header {
   background-position: right top;
   background-repeat: no-repeat;
   min-height: 100vh;
+
   form {
     input {
-        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
-        padding: .6rem .8rem;
-        outline: none;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
+      padding: .6rem .8rem;
+      outline: none;
+      color: $light;
+
+      &::placeholder {
         color: $light;
-        &::placeholder {
-          color: $light;
-        }
       }
-      img {
-        width: 2rem;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-      }
+    }
+
+    img {
+      width: 2rem;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
-         h1 {
-          color: $black;
-          text-transform: capitalize;
-        }
+
+  h1 {
+    color: $black;
+    text-transform: capitalize;
+  }
 
 }
+
 @media (max-width: 991.98px) {
   .intro {
     min-height: 80vh;
   }
 }
+
 @media (min-width: 992px) {
   .intro h1 {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 1400px) {
   .intro h1 {
     font-size: 3.8rem;
@@ -133,21 +152,28 @@ header {
 }
 
 // Passionn
-.passion, .jobs, .companies, .categories {
+.passion,
+.jobs,
+.companies,
+.categories {
   img {
     width: 27rem;
   }
 }
+
 .passion,
 .jobs,
 .companies,
-.categories, .join {
+.categories,
+.join,
+.testimonials {
   padding-bottom: 10rem;
 }
+
 @media (min-width: 768px) {
-   p.desc {
-        width: 80%;
-    }
+  p.desc {
+    width: 80%;
+  }
 }
 
 // Categories
@@ -157,26 +183,101 @@ header {
     border-radius: 1.5rem;
     padding: 1.8rem 0;
     transition: $transition;
+
     h3 {
       color: $black;
       font-size: 1.2rem;
     }
+
     &:hover {
       background-color: $main;
-      transform: translateY(-.2rem) ;
-      h3, p {
+      transform: translateY(-.2rem);
+
+      h3,
+      p {
         color: $white !important;
         transition: $transition;
       }
     }
+
     img {
       // width: 7.5rem;
       max-width: 7.5rem;
     }
   }
 }
+
 @media (min-width: 992px) {
-    .main-title h3 {
-        font-size: 2.4rem;
+  .main-title h3 {
+    font-size: 2.4rem;
+  }
+}
+
+
+// Testimonial
+.testimonials {
+
+  .swiper-wrapper {
+    // min-height: 50vh;
+    margin-top: 3rem;
+    
+  }
+
+  .swiper-slide {
+    // padding: 0 1rem;
+    .item {
+      border-radius: 1rem;
+      padding: 4rem 1rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+      margin: 25px;
+      position: relative;
+      img {
+        position: absolute;
+        left: 50%;
+        top: -25%;
+        transform: translateX(-50%);
+        border-radius: 50%;
       }
+      p {
+        color: $black;
+        font-weight: 300;
+      }
+    }
+
+
+    .stars svg {
+      color: $yellow;
+      font-size: 1.5rem;
+    }
+
+    p {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  .head {
+    color: $black;
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .arr {
+      width: 100px;
+      position: relative;
+      margin-left: auto;
+      // position: absolute;
+      // right: 0;
+      // top: 50%;
+      // transform: translateY(-50%);
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev svg {}
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
 }

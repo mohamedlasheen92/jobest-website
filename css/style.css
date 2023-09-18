@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  min-height: 5000px;
+  min-height: 6000px;
 }
 
 button {
@@ -212,4 +212,69 @@ header .sign:hover {
 .testimonials .swiper-button-next:after,
 .testimonials .swiper-button-prev:after {
   display: none;
+}
+
+footer {
+  background-color: #3EB8F4;
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+footer ul li {
+  cursor: pointer;
+}
+footer .start {
+  padding: 7rem 0;
+}
+footer .start h3 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+footer .start form {
+  position: relative;
+}
+footer .start form button {
+  background-color: #112D58;
+  padding: 0.4rem 1.8rem;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s linear;
+}
+footer .start form button:hover {
+  background-color: rgba(37, 75, 133, 0.9490196078);
+}
+footer .start form input {
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  color: #8497B4;
+}
+footer .start form p[class*=feedback] {
+  font-weight: bold;
+  position: absolute;
+  bottom: -50px;
+}
+footer .info h3 {
+  margin-bottom: 3rem;
+}
+footer .info li {
+  margin-bottom: 1rem;
+}
+footer .social svg {
+  margin-left: 1rem;
+  color: #254B85;
+}
+footer .owner {
+  color: #fff;
+  font-size: 0.8rem;
+}
+footer .owner span {
+  color: #112D58;
+  font-weight: bold;
+}
+footer .owner svg {
+  display: inline-block;
+  color: #254B85;
+  margin: 0.2rem 0.4rem 0;
 }/*# sourceMappingURL=style.css.map */

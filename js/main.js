@@ -9,6 +9,7 @@ navBarToggler.addEventListener("click", (event) => {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) header.style.backgroundColor = 'rgba(249, 250, 253, 0.7)';
   else header.style.backgroundColor = "transparent";
+  scrollFun();
 })
 
 const swiper = new Swiper('.swiper', {
@@ -54,3 +55,30 @@ const swiper = new Swiper('.swiper', {
     }, false)
   })
 })()
+
+
+// Animate Sections
+const inView = document.querySelectorAll(".block");
+// console.log(inView);
+
+const jobs = document.getElementById("jobs");
+
+function scrollFun() {
+  for (let i = 0; i < inView.length; i++) {
+
+    if (inView[i].getBoundingClientRect().top < window.innerHeight - 250) {
+      inView[i].classList.add("is-show");
+    } else {
+      inView[i].classList.remove("is-show");
+    }
+
+  }
+  // console.log(window.innerHeight);
+
+
+}
+
+// const btn = document.getElementById("click");
+// console.log(jobs.getBoundingClientRect());
+// console.log(jobs.offsetTop);
+// console.log(btn.getBoundingClientRect().top);

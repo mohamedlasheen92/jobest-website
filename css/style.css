@@ -7,7 +7,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  min-height: 6000px;
 }
 
 button {
@@ -133,6 +132,7 @@ header .sign:hover {
 .join,
 .testimonials {
   padding-bottom: 10rem;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -277,4 +277,26 @@ footer .owner svg {
   display: inline-block;
   color: #254B85;
   margin: 0.2rem 0.4rem 0;
+}
+
+.from-left {
+  transform: translateX(-100%);
+}
+
+.from-right {
+  transform: translateX(100%);
+}
+
+.from-bottom {
+  transform: translateY(150px);
+}
+
+.block {
+  transition: 1s;
+  opacity: 0;
+}
+
+.is-show {
+  transform: none;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

@@ -17,7 +17,6 @@ $transition: all .3s linear;
 
 body {
   font-family: 'Poppins', sans-serif;
-  min-height: 6000px;
 }
 
 button {
@@ -168,6 +167,7 @@ header {
 .join,
 .testimonials {
   padding-bottom: 10rem;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -370,4 +370,26 @@ footer {
       margin: .2rem .4rem 0;
     }
   }
+}
+
+
+
+
+// Animate Sections
+.from-left {
+  transform: translateX(-100%);
+}
+.from-right {
+  transform: translateX(100%);
+}
+.from-bottom {
+  transform: translateY(150px);
+}
+.block {
+  transition: 1s;
+  opacity: 0;
+}
+.is-show {
+  transform: none;
+  opacity: 1;
 }

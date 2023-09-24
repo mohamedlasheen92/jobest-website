@@ -7,7 +7,7 @@ navBarToggler.addEventListener("click", (event) => {
   else header.style.backgroundColor = "transparent";
 })
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) header.style.backgroundColor = 'rgba(249, 250, 253, 0.7)';
+  if (window.scrollY > 0) header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
   else header.style.backgroundColor = "transparent";
   scrollFun();
 })
@@ -78,7 +78,8 @@ function scrollFun() {
 
 }
 
-// const btn = document.getElementById("click");
-// console.log(jobs.getBoundingClientRect());
-// console.log(jobs.offsetTop);
-// console.log(btn.getBoundingClientRect().top);
+
+// Loading
+window.addEventListener("load", function () {
+  this.document.querySelector(".loading").classList.add("out");
+})

@@ -68,13 +68,12 @@ function scrollFun() {
 
     if (inView[i].getBoundingClientRect().top < window.innerHeight - 250) {
       inView[i].classList.add("is-show");
-    } else {
-      inView[i].classList.remove("is-show");
     }
+    // else {
+    //   inView[i].classList.remove("is-show");
+    // }
 
   }
-  // console.log(window.innerHeight);
-
 
 }
 
@@ -83,3 +82,5 @@ function scrollFun() {
 window.addEventListener("load", function () {
   this.document.querySelector(".loading").classList.add("out");
 })
+
+

@@ -79,6 +79,7 @@ header .sign:hover {
   background-position: right top;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
 }
 .intro form input {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
@@ -102,7 +103,23 @@ header .sign:hover {
   color: #112D58;
   text-transform: capitalize;
 }
+.intro > img {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  animation: 1.5s move linear infinite alternate-reverse;
+}
 
+@media (max-width: 767.98px) {
+  .intro > img {
+    bottom: -7rem;
+  }
+}
+@keyframes move {
+  100% {
+    bottom: -2rem;
+  }
+}
 @media (max-width: 991.98px) {
   .intro {
     min-height: 80vh;
@@ -118,6 +135,10 @@ header .sign:hover {
     font-size: 3.8rem;
   }
 }
+.passion {
+  padding-top: 5rem;
+}
+
 .passion img,
 .jobs img,
 .companies img,
@@ -139,6 +160,17 @@ header .sign:hover {
   p.desc {
     width: 80%;
   }
+}
+.categories {
+  position: relative;
+}
+.categories > img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 13rem;
+  z-index: -1;
+  animation: 2s moveCategory linear infinite alternate-reverse;
 }
 .categories .card {
   box-shadow: 0 1.5625rem 2.8125rem rgba(0, 87, 255, 0.15);
@@ -163,11 +195,20 @@ header .sign:hover {
   max-width: 7.5rem;
 }
 
+@keyframes moveCategory {
+  100% {
+    top: 3rem;
+  }
+}
 @media (min-width: 992px) {
   .main-title h3 {
     font-size: 2.4rem;
   }
 }
+.join img {
+  width: 100%;
+}
+
 .testimonials .swiper-wrapper {
   margin-top: 3rem;
 }

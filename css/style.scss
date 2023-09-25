@@ -104,6 +104,7 @@ header {
   background-position: right top;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
 
   form {
     input {
@@ -129,7 +130,24 @@ header {
     color: $black;
     text-transform: capitalize;
   }
-
+  > img {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    animation: 1.5s move linear infinite alternate-reverse;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro {
+  > img {
+    bottom: -7rem;
+  }
+}
+}
+@keyframes move {
+  100% {
+    bottom: -2rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -150,7 +168,11 @@ header {
   }
 }
 
-// Passionn
+// Passion
+.passion {
+  padding-top: 5rem;
+}
+
 .passion,
 .jobs,
 .companies,
@@ -178,6 +200,15 @@ header {
 
 // Categories
 .categories {
+  position: relative;
+  > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13rem;
+    z-index: -1;
+    animation: 2s moveCategory linear infinite alternate-reverse;
+  }
   .card {
     box-shadow: 0 1.5625rem 2.8125rem rgba(0, 87, 255, 0.15);
     border-radius: 1.5rem;
@@ -206,6 +237,11 @@ header {
     }
   }
 }
+@keyframes moveCategory {
+  100% {
+    top: 3rem;
+  }
+}
 
 @media (min-width: 992px) {
   .main-title h3 {
@@ -213,6 +249,12 @@ header {
   }
 }
 
+// Join
+.join {
+  img {
+    width: 100%;
+  }
+}
 
 // Testimonial
 .testimonials {
@@ -343,9 +385,6 @@ footer {
     }
     li {
       margin-bottom: 1rem;
-    }
-    .col {
-      // padding: 0;
     }
   }
   .social {
